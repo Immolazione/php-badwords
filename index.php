@@ -2,12 +2,11 @@
 
 $phrase = "Ieri ho preso il pane, è molto buono il pane. Quando l' ho portato a casa mia moglie ha eslamato:'PANE!', e poi abbiamo mangiato il pane assieme.";
 
-$name = 'pane';
 
-$bad_words = $_GET ? $_GET[$name] : '';
+$word = $_GET ? $_GET["bad_word"] : '';
 
 
-$clean_phrase = str_replace($bad_words, '***', $phrase);
+$clean_phrase = str_replace($word, '***', $phrase);
 
 ?>
 
