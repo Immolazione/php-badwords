@@ -6,6 +6,7 @@ $name = 'pane';
 
 $bad_words = $_GET ? $_GET[$name] : '';
 
+
 $clean_phrase = str_replace($bad_words, '***', $phrase);
 
 ?>
